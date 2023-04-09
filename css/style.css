@@ -15,6 +15,9 @@ figcaption {
     width: 100%;
     text-align: center;
 }
+.blue {
+    border: 8px solid #005af5 !important;
+}
 .cat img {
     max-width: 2cm;
 }
@@ -30,6 +33,10 @@ figcaption {
 input[type="checkbox"] {
     display: none;
 }
-.cat {
-
+button {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: #005af5;
 }
