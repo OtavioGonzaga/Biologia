@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Alkatra', cursive;
+}
+section {
+    width: 100%;
+    max-width: 840px;
+    background-color: green;
+}
+figcaption {
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+}
+.cat img {
+    max-width: 2cm;
+}
+.cat {
+    height: 2cm;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    border: 8px solid white;
+    max-width: 2cm;
+    border-radius: 10px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.cat {
+
+}
