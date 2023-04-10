@@ -9,6 +9,11 @@
 body {
     background-color: rgb(177, 177, 177);
 }
+h1 {
+    padding: 1cm;
+    font-weight: 500;
+    color: #005940;
+}
 section {
     width: 100%;
     max-width: 840px;
