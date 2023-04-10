@@ -1,27 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 * {
     padding: 0;
     margin: 0;
     border: 0;
     font-family: 'Alkatra', cursive;
 }
+body {
+    background-color: rgb(177, 177, 177);
+}
 section {
     width: 100%;
     max-width: 840px;
-    background-color: green;
 }
 figcaption {
     letter-spacing: 2px;
     width: 100%;
     text-align: center;
 }
-.blue {
+.selected {
     border: 8px solid #005af5 !important;
 }
 .cat img {
     max-width: 2cm;
 }
 .cat {
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.979);
     height: 2cm;
     display: inline-block;
     cursor: pointer;
@@ -30,13 +34,28 @@ figcaption {
     max-width: 2cm;
     border-radius: 10px;
 }
-input[type="checkbox"] {
-    display: none;
-}
 button {
+    margin: 0.5cm 1cm;
     padding: 6px 10px;
     border-radius: 5px;
     border: 1px solid white;
     color: white;
     background-color: #005af5;
+    border: 0;
+}
+button.disabled {
+    background-color: #005af589;
+    color: rgba(255, 255, 255, 0.329);
+}
+.inline {
+    display: flex;
+    align-items: center;
+}
+.inline p {
+    color: white;
+    font-size: small;
+    cursor: pointer;
+    padding: 6px 10px;
+    background-color: #005af5;
+    border-radius: 5px;
 }
