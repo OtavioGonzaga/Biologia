@@ -8,9 +8,9 @@ function borderCat(img) {
         img.classList.add('selected')
     }
     if (document.querySelectorAll('.selected').length == 2) {
-        document.querySelector('button').outerHTML = '<button onclick="cruzar()"><i class="bi bi-star"></i>  Cruzar</button>'
-    } else if (!document.querySelector('button').outerHTML.includes('disabled')) {
-        document.querySelector('button').outerHTML = '<button class="disabled"><i class="bi bi-star"></i>  Cruzar</button>'
+        document.querySelectorAll('button')[1].outerHTML = '<button onclick="cruzar()"><i class="bi bi-star"></i>  Novo gato</button>'
+    } else if (!document.querySelectorAll('button')[1].outerHTML.includes('disabled')) {
+        document.querySelectorAll('button')[1].outerHTML = '<button class="disabled"><i class="bi bi-star"></i>  Novo gato</button>'
     }
 }
 function probabilidade(AA, Aa, aa) {
@@ -35,9 +35,9 @@ function cruzar() {
     if (cats[0].innerText == 'aa' && cats[1].innerText == 'Aa') var child = probabilidade(0, 0.5, 0.5)
     if (cats[0].innerText == 'Aa' && cats[1].innerText == 'aa') var child = probabilidade(0, 0.5, 0.5)
     document.querySelector('section').innerHTML += `<figure class="cat" onclick="borderCat(this)"><img src="${child.color}"><figcaption>${child.gen}</figcaption></figure>`
-    document.querySelector('button').outerHTML = '<button class="disabled"><i class="bi bi-star"></i>  Cruzar</button>'
+    document.querySelectorAll('button')[1].outerHTML = '<button class="disabled"><i class="bi bi-star"></i>  Novo gato</button>'
     document.querySelectorAll('.selected').forEach(e => e.classList.remove('selected'))
 }
 function reload() {
-    location.reload()
+    document.querySelector('section').innerHTML = '<figure class="cat" onclick="borderCat(this)"><img src="img/black_cat_green_background.jpeg"><figcaption>AA</figcaption></figure><figure class="cat" onclick="borderCat(this)"><img src="img/white_cat_green_background.jpeg"><figcaption>aa</figcaption></figure>'
 }

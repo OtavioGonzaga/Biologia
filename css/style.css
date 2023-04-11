@@ -7,12 +7,22 @@
     font-family: 'Alkatra', cursive;
 }
 body {
-    background-color: rgb(177, 177, 177);
+    max-width: 400px;
+    background: url('../img/background.jpeg');
+	background-size: cover;
+    background-attachment: fixed;
 }
 h1 {
-    padding: 1cm;
-    font-weight: 500;
-    color: #005940;
+    background-image: url(../img/title.png);
+    text-align: center;
+    font-family: cursive;
+    font-size: .6cm;
+    padding: 7px 0;
+    max-width: 360px;
+    background-position: -10px;
+    margin: 0.8cm 0.3cm;
+    letter-spacing: 2px;
+    color: #d5d1cc;
 }
 section {
     width: 100%;
@@ -24,7 +34,7 @@ figcaption {
     text-align: center;
 }
 .selected {
-    border: 8px solid #005af5 !important;
+    border: 8px solid #c88956 !important;
 }
 .cat img {
     max-width: 2cm;
@@ -40,27 +50,20 @@ figcaption {
     border-radius: 10px;
 }
 button {
-    margin: 0.5cm 1cm;
     padding: 6px 10px;
     border-radius: 5px;
     border: 1px solid white;
     color: white;
-    background-color: #005af5;
+    background-color: #c88956;
     border: 0;
 }
 button.disabled {
-    background-color: #005af589;
+    background-color: #c88956b1;
     color: rgba(255, 255, 255, 0.329);
 }
 .inline {
+    margin-bottom: 0.5cm;
     display: flex;
     align-items: center;
-}
-.inline p {
-    color: white;
-    font-size: small;
-    cursor: pointer;
-    padding: 6px 10px;
-    background-color: #005af5;
-    border-radius: 5px;
+    justify-content: space-around;
 }
