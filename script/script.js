@@ -40,4 +40,8 @@ function cruzar() {
 }
 function reload() {
     document.querySelector('section').innerHTML = '<figure class="cat" onclick="borderCat(this)"><img src="img/black_cat_green_background.jpeg"><figcaption>AA</figcaption></figure><figure class="cat" onclick="borderCat(this)"><img src="img/white_cat_green_background.jpeg"><figcaption>aa</figcaption></figure>'
+    document.querySelectorAll('button')[1].outerHTML = '<button class="disabled"><i class="bi bi-star"></i>  Novo gato</button>'
 }
+addEventListener('keypress', e => {
+    if (e.key === 'Enter' && document.querySelectorAll('.selected').length == 2) cruzar()
+})

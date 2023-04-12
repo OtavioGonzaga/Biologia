@@ -12,15 +12,23 @@ body {
 	background-size: cover;
     background-attachment: fixed;
 }
+@media screen and (min-width: 370px) {
+    body {
+        background: url('../img/background.jpeg');
+        background-size: contain;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
+}
 h1 {
-    background-image: url(../img/title.png);
+    background-image: url('../img/title.png');
     text-align: center;
     font-family: cursive;
     font-size: .6cm;
     padding: 7px 0;
-    max-width: 360px;
+    max-width: 320px;
+    margin: 20px 0;
     background-position: -10px;
-    margin: 0.8cm 0.3cm;
     letter-spacing: 2px;
     color: #d5d1cc;
 }
